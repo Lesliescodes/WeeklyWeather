@@ -5,6 +5,18 @@ var apiKey = '&appid=d196b19dfff57ff2ede0751c52d064e0';
 var units = '&units=imperial';
 var input = document.querySelector("#city");
 var searchField = document.querySelector("#searchField");
+var currentlocation = document.getElementById("current-location")
+var currenttemp = document.getElementById("current-temp")
+var currentwind = document.getElementById("current-wind")
+var currenthumidity = document.getElementById("current-humidity")
+var currentuv = document.getElementById("current-uv")
+var weatherIcon = document.getElementById("icon")
+var buttonList = document.getElementById("button-list")
+var dayOneTemp = document.getElementById("dayOneTemp")
+var dayTwo = document.getElementById("dayTwo")
+var dayThree = document.getElementById("dayThree")
+var dayFour = document.getElementById("dayFour")
+var dayFive = document.getElementById("dayFive")
 
 function setup() {
 
