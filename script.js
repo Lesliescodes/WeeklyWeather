@@ -18,7 +18,6 @@ var dayThree = document.getElementById("dayThree")
 var dayFour = document.getElementById("dayFour")
 var dayFive = document.getElementById("dayFive")
 
-function setup() {
 
     var button = select('#submit');
     button.mousePressed(findWeather);
