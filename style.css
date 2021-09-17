@@ -1,0 +1,68 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    
+    header h1 {
+        text-align: center;
+        background-image: linear-gradient( #3A1C71, #D76D77, #FFAF7B );
+      }
+      main .beyonce {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 100%;
+      }
+      main .rihanna {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 100%;
+        justify-content: space-between;
+      }
+      button type, .btnClass, .search-field, #city-name, .nopad {
+        width: 100%;
+        padding-left: .4vw;
+      }.btn {
+        background-color: #3a1c71; /* */
+        border: none;
+        color: whitesmoke;
+        padding: 8px 50px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 7px;
+        margin-top: .5vw;
+      }
+      .btnClass {
+        background-color: #d76d77;
+        border: none;
+        color: white;
+        padding: 4px 50px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin-bottom: .5vw;
+      }
+
+      h1, h2, h3, h4 {
+        font-weight: bold;
+      }
+      .beyonce > #current-location, #currentDay{
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .rihanna> div {
+        background-color: #FFAF7B;
+      
+      }
+      #output-uv {
+        color: white;
+        border-radius: 10px;
+      }
+      .purple {
+        background-color: purple;
+      }
+      .gold {
+        background-color: gold;
+      }
+      .sliver {
+        background-color: silver;
+      }   
+      </style>

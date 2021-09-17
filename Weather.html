@@ -2,38 +2,49 @@
 <html lang="en">
 
 <head>
+    <!--Require meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>WeatherNow</title>
+
 <!-- Bootstrap CSS-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" 
 integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+</head>
 
 <body>
-    <div class="wrapper">
-    <header class="queen">
+    <!-- Start of Jumbotron-->
+
+    <main class="jumbotron-fluid bg-dark text-white text-center">
+        <div class="container">
+            <div class="container">
+        <header class="queen">
         <h1>
             Weather Dashboard 🌞
         </h1>
+    </div>
     </header>
-
-    <section class="section">
-        <h3 class="title">Rain or Shine we're here for you!</h3>
-        <h4 class="subtitle">
-        <label class="label">Current City</label> 
-        <div class="findWeather">
-        <form id="searchField">
-        <input type="text" id="city"><input type="submit" id="searchButton" value="Submit">
+  
+    <!-- <section class="section"> -->
+        <h3 class="title">Rain or shine we'll be here for you!</h3>
+        <h4 class="subtitle"> <label class="label">Current City</label> 
+        <!-- <div class="findWeather"> -->
+        <div class="searchField">
+            <!-- <form id="searchField"> -->
+            <!--Submit Btn-->
+            <input type="text" id="city"><input type="submit" id="searchButton" value="Submit">
+            <!-- <input name=" Current-city" id="Current-city" type="text" id="searchButton"  class="form-input"> -->
+            <button type="submit" value="Submit" class="btn">
+        </div>
         </form> 
     
     </section>
-    <div class="card">
-        <div class="card-body">
-        </div>
     </div>
+    <div class="col-6 col-lg-7"></div>
     <div class="beyonce">
+        <div id="weatherTemp">Weather will go here
         <div id="current-location"></div>
         <div id="currentday"></div>
         <div id="icon"></div>
@@ -61,8 +72,9 @@ integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3Ah
             <div id="current-uv">&nbsp;</div>
             <div>
 
-                <h3 class="divider">5-Day Forecast</h3>
+                <h3 class='divider' id='fiveDayForcast'>5-Day Forecast</h3>
                 <div class="rihanna">
+                    <div class="col-12 col-md-"></div>
                     <div>
                         <div id="dayOneDate">&nbsp;</div>
                         <div id="dayOneIcon">&nbsp;</div>
@@ -161,6 +173,7 @@ integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3Ah
                 <div>%</div>
             </div>
         </div>
+    </main>
         <script src="/assets/script.js"> </script>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

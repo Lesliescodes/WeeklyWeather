@@ -1,5 +1,5 @@
-var url = 'api.openweathermap.org/data/2.5/forecast?q=';
-var apiKey = '&appid=d196b19dfff57ff2ede0751c52d064e0';
+var url = 'http://api.openweathermap.org/data/2.5/forecast?q=';
+var apiKey ='&appid=d196b19dfff57ff2ede0751c52d064e0';
 var units = '&units=imperial';
 var input = document.querySelector("#city");
 var searchField = document.querySelector("#searchField");
