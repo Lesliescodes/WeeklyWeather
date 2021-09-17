@@ -1,6 +1,4 @@
-// var weather;
-
-var url = 'http://api.openweathermap.org/data/2.5/weather?q=';
+var url = 'api.openweathermap.org/data/2.5/forecast?q=';
 var apiKey = '&appid=d196b19dfff57ff2ede0751c52d064e0';
 var units = '&units=imperial';
 var input = document.querySelector("#city");
@@ -18,24 +16,25 @@ var dayThree = document.getElementById("dayThree")
 var dayFour = document.getElementById("dayFour")
 var dayFive = document.getElementById("dayFive")
 
+function setup() {
 
     var button = select('#submit');
-    button.mousePressed(findWeather);
+    button.mousePressed(searchField);
     searchField.addEventListener("submit", function (event) {
-        event.preventDefault();
+    event.preventDefault();
     })
 }
- <input=select:true ('#city')> <input>
+document.getElementById('searchButton').addEventListener('click', searchField) 
+ 
+// <input=select:true ('#city')> 
 
-document.getElementById('searchButton').addEventListener('click', findWeather)
-
-function findWeather(event) {
+function searchField(event) {
     event.preventDefault();
     input = input.value;
     url = url + input + apiKey + units;
     console.log(url);
     fetch(url)
-        api.openweathermap.org/data/2.5/weather?q={city}&appid={ }    
+        // api.openweathermap.org/data/2.5/weather?q={city}&appid={ }    
         .then(response => response.json())
         .then(data => {
             console.log(data.main.temp);

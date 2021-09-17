@@ -9,20 +9,26 @@
 </head>
 
 <body>
-    <div class="wrapper"></div>
-    <header>
+    <div class="wrapper">
+    <header class="queen">
         <h1>
             Weather Dashboard 🌞
         </h1>
     </header>
+
     <section class="section">
-        <h1>Enter Location</h1>
+        <h2>Rain or Shine we're here for you!</h2>
+        <h3 class="subtitle">
+    <div class="findWeather">
+        <label class="label">Current City</label>
+        <form id="searchField">
+        <input type="text" id="city"><input type="submit" id="searchButton" value="Submit">
+        </form> 
+    
     </section>
     <div class="card">
         <div class="card-body">
-            <textarea readonly id="searchField" placeholder="Salt Lake City" aria-label="Generated Weather"></textarea>
         </div>
-        <button class="btn">Search</button>
     </div>
     <div class="beyonce">
         <div id="current-location"></div>
@@ -34,16 +40,19 @@
         <div id="current-temp"></div>
         <div>&deg;F
         </div>
+      
         <div class="beyonce">
             <div>Wind:</div>
             <div id="current-wind">&nbsp;</div>
             <div>MPH</div>
         </div>
+      
         <div class="beyonce">
             <div>Humidity:</div>
             <div id="current-humidity">&nbsp;</div>
             <div>%</div>
         </div>
+      
         <div class="beyonce">
             <div>UV Index</div>
             <div id="current-uv">&nbsp;</div>
@@ -54,24 +63,27 @@
                     <div>
                         <div id="dayOneDate">&nbsp;</div>
                         <div id="dayOneIcon">&nbsp;</div>
-                        <div class="beyonce">
-                            <div class="beyonce">
-                                <div>Temp:</div>
-                                <div id="dayOneTemp">&nbsp;</div>
-                                <div>&deg;F</div>
+                 
+                  <div class="beyonce">
+                      <div>Temp:</div>
+                        <div id="dayOneTemp">&nbsp;</div>
+                            <div>&deg;F</div>
                             </div>
+                            
                             <div class="beyonce">
                                 <div>Wind:</div>
                                 <div id="dayOneWind">&nbsp;</div>
                                 <div>MPH</div>
                             </div>
+                            
                             <div class="beyonce">
                                 <div>Humidity:</div>
                                 <div id="dayOneHumidiy">&nbsp;</div>
                                 <div>%</div>
                             </div>
                         </div>
-                        <div id="dayTwoDate">&nbsp;</div>
+
+                     <div id="dayTwoDate">&nbsp;</div>
                         <div id="dayTwoIcon">&nbsp;</div>
                         <div class="beyonce">
                             <div>Temp:</div>
@@ -146,7 +158,7 @@
                 <div>%</div>
             </div>
         </div>
-        <script src="script.js"></script>
+        <script src="/assets/script.js"> </script>
 </body>
 
 </html>
