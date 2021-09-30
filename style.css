@@ -1,15 +1,16 @@
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 *{
     
     header h1 {
         text-align: center;
-        background-image: linear-gradient( #3A1C71, #D76D77, #FFAF7B );
+        <background-image> linear-gradient( #3A1C71, #D76D77, #FFAF7B );
       }
       main .beyonce {
         display: flex;
         flex-wrap: wrap;
         flex: 100%;
+        border:solid;
       }
       main .rihanna {
         display: flex;
