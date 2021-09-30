@@ -12,8 +12,6 @@ function setup() {
         event.preventDefault();
     })
 }
-document.getElementById('searchButton').addEventListener('click', findWeather)
-
 function findWeather(event) {
     event.preventDefault();
     input = input.value;
@@ -28,3 +26,4 @@ function findWeather(event) {
             tempWeather.innerText = temp;
         })
 }
+document.getElementById('submitButton').addEventListener('click', findWeather)

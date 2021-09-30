@@ -11,7 +11,7 @@
 <!-- Bootstrap CSS-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" 
 integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/assets/style.css">
 </head>
 
 <body>
@@ -19,7 +19,6 @@ integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3Ah
 
     <main class="jumbotron-fluid bg-dark text-white text-center">
         <div class="container">
-            <div class="container">
         <header class="queen">
         <h1 id='title'>
             Weather Dashboard 🌞
@@ -33,7 +32,7 @@ integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3Ah
             Current City 
         <div class="findWeather">
         <form id="searchField">
-            <input type="text" id="city"><input type="submit" id="submitButton" value="submit">
+            <input type="text" id="city"><input type="submit" id="submitButton" value="Submit">
             </form> 
             
             <section class=" section is-small is-primary is-outlined">
@@ -41,6 +40,21 @@ integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3Ah
             </section>
             <!-- <input name=" Current-city" id="Current-city" type="text" id="searchButton"  class="form-input"> -->
             <!-- <button type="submit" value="Submit" class="btn"> -->
+    <!-- <div class="col-2 col-lg-7"></div> -->
+    <div class="beyonce">
+        <div>Temp:</div>
+        <div id="current-temp"></div>
+        <div>&deg;F </div>
+            <div>Wind:</div>
+            <div id="current-wind">&nbsp;</div>
+            <div>MPH:</div>
+            <div>Humidity %:</div>
+            <div id="current-humidity">&nbsp;</div>
+        </div>
+            <div>UV Index:</div>
+            <div id="current-uv">&nbsp;</div> 
+            </div>
+            <div>
                 <section class=" section is-small is-primary is-outlined"> 
                     <div class="container">
                     <div class="row">
@@ -48,32 +62,9 @@ integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3Ah
                             <h4 id="history">
                                 <a>Search History</a>
                             </h4>
-            
    
     </section>
     </div>
-    <div class="col-2 col-lg-7"></div>
-    <div class="beyonce">
-        <div>Temp:</div>
-        <div id="current-temp"></div>
-        <div>&deg;F
-        </div>
-      
-        <div class="beyonce">
-            <div>Wind:</div>
-            <div id="current-wind">&nbsp;</div>
-            <div>MPH:</div>
-        </div>
-      
-        <div class="beyonce">
-            <div>Humidity %:</div>
-            <div id="current-humidity">&nbsp;</div>
-        </div>
-      
-        <div class="beyonce">
-            <div>UV Index:</div>
-            <div id="current-uv">&nbsp;</div>
-            <div>
 
                 <h3 class='divider' id='fiveDayForcast'>5-Day Forecast</h3>
                 <div class="rihanna">
