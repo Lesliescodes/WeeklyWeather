@@ -6,182 +6,188 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeatherNow</title>
 
-<!-- Bootstrap CSS-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" 
-integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-<link rel="stylesheet" href="/assets/style.css">
+    <!-- Bootstrap CSS-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>WeatherNow</title>
 </head>
 
 <body>
     <!-- Start of Jumbotron-->
 
-    <main class="jumbotron-fluid bg-dark text-white text-center">
-        <div class="container">
+    <!-- <main class="jumbotron-fluid bg-dark text-white text-left"> -->
+    <div class="container is fluid">
         <header class="queen">
-        <h1 id='title'>
-            Weather Dashboard 🌞
-        </h1>
+            <h1 id='title'>
+                Weather Dashboard 🌞
+            </h1>
     </div>
     </header>
-  
-    <section class="section"> 
+
+    <section class="section">
+
         <h2 class="title">Rain or shine we'll be here for you!</h2>
-        <h3 class="subtitle"> 
-            Current City 
         <div class="findWeather">
-        <form id="searchField">
-            <input type="text" id="city"><input type="submit" id="submitButton" value="Submit">
-            </form> 
-            
+            <div class="col-sm-4 bg-light">
+                <h4> Search Current City </h4>
+                <form id="searchField">
+                    <!-- <input type="text" id="city"> <input type="submit" id="submitButton" value="Submit" class="btnClass"> -->
+                    <!-- <input type="text" id="city"> <input type="submit" id="searchButton" value="Search" class="btnClass">
+            </form>  -->
+                    <!-- <input type="text" id="city"> -->
+            </div>
+            <input class="inputValue  input is-normal " type="text" id="search-input"
+                placeholder="Search Weather by City">
+            <input type="submit" id="searchButton" value="Submit">
+            <!-- <button id="Clear Searches">Clear Search</button> -->
+
+            </form>
             <section class=" section is-small is-primary is-outlined">
-
             </section>
-            <!-- <input name=" Current-city" id="Current-city" type="text" id="searchButton"  class="form-input"> -->
-            <!-- <button type="submit" value="Submit" class="btn"> -->
-    <!-- <div class="col-2 col-lg-7"></div> -->
-    <div class="beyonce">
-        <div>Temp:</div>
-        <div id="current-temp"></div>
-        <div>&deg;F </div>
-            <div>Wind:</div>
-            <div id="current-wind">&nbsp;</div>
-            <div>MPH:</div>
-            <div>Humidity %:</div>
-            <div id="current-humidity">&nbsp;</div>
         </div>
-            <div>UV Index:</div>
-            <div id="current-uv">&nbsp;</div> 
-            </div>
-            <div>
-                <section class=" section is-small is-primary is-outlined"> 
-                    <div class="container">
-                    <div class="row">
-                        <div class="col-2 mt-5" id="searched">
-                            <h4 id="history">
-                                <a>Search History</a>
-                            </h4>
-   
-    </section>
-    </div>
 
-                <h3 class='divider' id='fiveDayForcast'>5-Day Forecast</h3>
-                <div class="rihanna">
-                    <div class="col-12 col-md-"></div>
+        <div class="col-sm-8">
+            <div class="container">
+                <div class="row">
+                    <div class="data">
+                        <p class="is-medium mb-0" id="currentTemp">Temp</p>
+                        <p class="is-medium mb-0" id="date-time">Local date and time</p>
+                        <p class="is-medium mb-0" id="currentWind">Wind Speed</p>
+                        <p class="is-medium mb-0" id="currentHumidity">Humidity %:</p>
+                        <p class="is-medium mb-0" id="currentUv">UV Index:</p>
+
+                    </div>
+
                     <div>
-                        <div id="dayOneDate">&nbsp;</div>
-                        <div id="dayOneIcon">&nbsp;</div>
-                 
-                  <div class="beyonce">
-                      <div>Temp:</div>
-                        <div id="dayOneTemp">&nbsp;</div>
-                            <div>&deg;F</div>
-                            </div>
-                            
-                            <div class="beyonce">
-                                <div>Wind:</div>
-                                <div id="dayOneWind">&nbsp;</div>
-                                <div>MPH</div>
-                            </div>
-                            
-                            <div class="beyonce">
-                                <div>Humidity:</div>
-                                <div id="dayOneHumidity">&nbsp;</div>
-                                <div>%</div>
-                            </div>
-                        </div>
-
-                     <div id="dayTwoDate">&nbsp;</div>
-                        <div id="dayTwoIcon">&nbsp;</div>
-                        <div class="beyonce">
-                            <div>Temp:</div>
-                            <div id="dayTwoTemp">&nbsp;</div>
-                            <div>&deg;F</div>
-                        </div>
-                        <div class="beyonce">
-                            <div>Wind:</div>
-                            <div id="dayTwoWind">&nbsp;</div>
-                            <div>MPH</div>
-                        </div>
-                        <div class="beyonce">
-                            <div>Humidity:</div>
-                            <div id="dayTwoHumidity">&nbsp;</div>
-                            <div>%</div>
-                        </div>
+                        <section class=" section is-small is-primary is-outlined">
+                            <div class="container">
+                                <div class="row">
+                                    <div id="searched">
+                                        <h4 id="history">
+                                            <button id="Clear Searches">Clear Search</button>
+                                            <!-- <a>Search History</a> -->
+                                        </h4>
+                                        <div class="content">
+                                            <p class="title is-2" id="cityName"></p>
+                                            <p class="subtitle is-4" id="desc"></p>
+                                        </div>
+                        </section>
                     </div>
-                    <div id="dayThreeDate">&nbsp;</div>
-                    <div id="dayThreeIcon">&nbsp;</div>
-                    <div class="beyonce">
-                        <div>Temp:</div>
-                        <div id="dayThreeTemp">&nbsp;</div>
-                        <div>&deg;F</div>
-                    </div>
-                    <div class="beyonce">
-                        <div>Wind:</div>
-                        <div id="dayThreeWind">&nbsp;</div>
-                        <div>MPH</div>
-                    </div>
-                    <div class="beyonce">
-                        <div>Humidity:</div>
-                        <div id="dayThreeHumidity">&nbsp;</div>
-                        <div>%</div>
-                    </div>
-                </div>
-                <div id="dayFourDate">&nbsp;</div>
-                <div id="dayFourIcon">&nbsp;</div>
-                <div class="beyonce">
-                    <div>Temp:</div>
-                    <div id="dayFourTemp">&nbsp;</div>
-                    <div>&deg;F</div>
-                </div>
 
-                <div class="beyonce">
-                    <div>Wind:</div>
-                    <div id="dayFourWind">&nbsp;</div>
-                    <div>MPH</div>
-                </div>
+                    <h3>5-Day Forecast</h3>
+                    <div class="col-sm-12" id="fiveDayForcast"></div>
 
-                <div class="beyonce">
-                    <div>Humidity:</div>
-                    <div id="dayFourHumidity">&nbsp;</div>
-                    <div>%</div>
-                </div>
-            </div>
-            <div id="dayFiveDate">&nbsp;</div>
-            <div id="dayFiveIcon">&nbsp;</div>
+                    <!-- <div class="rihanna"></div> -->
+                    <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
 
-            <div class="beyonce">
-                <div>Temp:</div>
-                <div id="dayFiveTemp">&nbsp;</div>
-                <div>&deg;F</div>
-            </div>
-            <div class="beyonce">
-                <div>Wind:</div>
-                <div id="dayFiveWind">&nbsp;</div>
-                <div>MPH</div>
-            </div>
-            <div class="beyonce">
-                <div>Humidity:</div>
-                <div id="dayFiveHumidity">&nbsp;</div>
-                <div>%</div>
-            </div>
+                    </div>
+                    <!-- <div class="container"> -->
+                    <!-- <div class="row"> -->
+
+
+
+
+
+
+                    <!-- <div id="dayTwoDate">&nbsp;</div>
+        <div id="dayTwoIcon">&nbsp;</div>
+
+        <div>Temp:</div>
+        <div id="dayTwoTemp">&nbsp;</div>
+        <div>&deg;F</div>
         </div>
-    </main>
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <p>
-                <strong>Weather Now</strong> by
-            <p> Leslie </p>
-            
+
+        <div>Wind:</div>
+        <div id="dayTwoWind">&nbsp;</div>
+        <div>MPH</div>
         </div>
-    </footer>
-</section>
-       
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
- <script src="/assets/script.js"> </script>  
+
+        <div>Humidity:</div>
+        <div id="dayTwoHumidity">&nbsp;</div>
+        <div>%</div>
+        </div>
+        </div>
+        <div id="dayThreeDate">&nbsp;</div>
+        <div id="dayThreeIcon">&nbsp;</div>
+        <div class="beyonce">
+            <div>Temp:</div>
+            <div id="dayThreeTemp">&nbsp;</div>
+            <div>&deg;F</div>
+        </div>
+
+        <div>Wind:</div>
+        <div id="dayThreeWind">&nbsp;</div>
+        <div>MPH</div>
+        </div>
+
+        <div>Humidity:</div>
+        <div id="dayThreeHumidity">&nbsp;</div>
+        <div>%</div>
+        </div>
+        </div>
+        <div id="dayFourDate">&nbsp;</div>
+        <div id="dayFourIcon">&nbsp;</div>
+        <div class="beyonce">
+            <div>Temp:</div>
+            <div id="dayFourTemp">&nbsp;</div>
+            <div>&deg;F</div>
+        </div>
+
+
+        <div>Wind:</div>
+        <div id="dayFourWind">&nbsp;</div>
+        <div>MPH</div>
+        </div>
+
+
+        <div>Humidity:</div>
+        <div id="dayFourHumidity">&nbsp;</div>
+        <div>%</div>
+        </div>
+        </div>
+        <div id="dayFiveDate">&nbsp;</div>
+        <div id="dayFiveIcon">&nbsp;</div>
+
+
+        <div>Temp:</div>
+        <div id="dayFiveTemp">&nbsp;</div>
+        <div>&deg;F</div>
+        </div>
+
+        <div>Wind:</div>
+        <div id="dayFiveWind">&nbsp;</div>
+        <div>MPH</div>
+        </div>
+
+        <div>Humidity:</div>
+        <div id="dayFiveHumidity">&nbsp;</div>
+        <div>%</div>
+        </div>
+        </div> -->
+                    </main>
+                    <footer class="footer">
+                        <div class="content has-text-centered">
+                            <p>
+                                <strong>Weather Now</strong> by
+                            <p> Leslie </p>
+
+                        </div>
+                    </footer>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="./assets/script.js"> </script>
 </body>
 
 </html>
