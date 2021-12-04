@@ -89,9 +89,7 @@ function getForecast(forecast, tz){
   var cardHeading = document.createElement('div');
   var heading = document.createElement('h3');
 
-  // var forecasttempEl = document.createElement('p');
-  // var forecastwindEl = document.createElement('p');
-  // var forecasthumidEl = document.createElement('p');
+  
   cardHeading.setAttribute('class', 'col-md-12');
   heading.textContent = "5 Day Forecast"
   cardHeading.append(heading);
@@ -108,10 +106,11 @@ function getForecast(forecast, tz){
     
   }
 }
-
+// renderforecast isn't working in the future will have the five day on line not just console.log
 function renderForecast(forecast, tz){
   
   var date = dayjs().unix(forecast.dt).tz(tz).format('M/D/YYYY');
+
   
 }
 
